@@ -52,7 +52,6 @@ export interface LayoutProps {
 
 type RevalidateRange<T> = T extends { revalidate: any } ? NonNegative<T['revalidate']> : never
 
-
 type OmitWithTag<T, K extends keyof any, _M> = Omit<T, K>
 type Diff<Base, T extends Base, Message extends string = ''> = 0 extends (1 & T) ? {} : OmitWithTag<T, keyof Base, Message>
 

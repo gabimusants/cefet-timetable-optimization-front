@@ -61,7 +61,6 @@ if ('GET' in entry) {
     >
   >()
 }
-
 if ('HEAD' in entry) {
   checkFields<
     Diff<
@@ -139,7 +138,6 @@ if ('OPTIONS' in entry) {
     >
   >()
 }
-
 if ('POST' in entry) {
   checkFields<
     Diff<
@@ -178,7 +176,6 @@ if ('POST' in entry) {
     >
   >()
 }
-
 if ('PUT' in entry) {
   checkFields<
     Diff<
@@ -256,7 +253,6 @@ if ('DELETE' in entry) {
     >
   >()
 }
-
 if ('PATCH' in entry) {
   checkFields<
     Diff<
@@ -295,6 +291,7 @@ if ('PATCH' in entry) {
     >
   >()
 }
+
 
 if ('generateStaticParams' in entry) {
   checkFields<Diff<{ params: PageParams }, FirstArg<MaybeField<TEntry, 'generateStaticParams'>>, 'generateStaticParams'>>()
